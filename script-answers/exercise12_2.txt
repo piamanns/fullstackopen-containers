@@ -1,0 +1,13 @@
+[1m[7m%[27m[1m[0m                                                                                ]7;file://xxx/Users/xxx/Documents/fullstackopen-containers[0m[27m[24m[Jxxx@xxx fullstackopen-containers % [K[?2004hexitdocker run -it ubuntu bash[?2004l
+[?2004h]0;root@1dadcaf7c7d3: /root@1dadcaf7c7d3:/# mkdir [7m/usr/src/app[27m/usr/src/app
+[?2004l[?2004h]0;root@1dadcaf7c7d3: /root@1dadcaf7c7d3:/# touch [7m/usr/src/app/index.js[27m/usr/src/app/index.js
+[?2004l[?2004h]0;root@1dadcaf7c7d3: /root@1dadcaf7c7d3:/# [Kcd /usr/src/app
+[?2004l[?2004h]0;root@1dadcaf7c7d3: /usr/src/approot@1dadcaf7c7d3:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@1dadcaf7c7d3: /usr/src/approot@1dadcaf7c7d3:/usr/src/app# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://xxx/Users/xxx/Documents/fullstackopen-containers[0m[27m[24m[Jxxx@xxx fullstackopen-containers % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
