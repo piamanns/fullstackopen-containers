@@ -1,0 +1,114 @@
+[1m[7m%[27m[1m[0m                                                                                ]7;file://xxx/Users/xxx/Documents/fullstackopen-containers[0m[27m[24m[Jxxx@xxx fullstackopen-containers % [K[?2004hddocker start-  -i nervous_burnell [K[K[?2004l
+[?2004h]0;root@1dadcaf7c7d3: /root@1dadcaf7c7d3:/# [7mcurl -fsSL https://deb.nodesource.com/setup_current.x | bas[27m[7mh[27m[7mh - &&\[27m
+[7mapt-get install -y nodejs[27m[A[Acurl -fsSL https://deb.nodesource.com/setup_current.x | bash - &&\
+apt-get install -y nodejs
+[?2004l
+[1m[31m================================================================================(B[m
+[1m[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓(B[m
+[1m[31m================================================================================(B[m
+
+  [1m[33m                         [4mSCRIPT DEPRECATION WARNING(B[m                    (B[m
+
+  
+  This script, located at [1mhttps://deb.nodesource.com/setup_X(B[m, used to
+  install Node.js is deprecated now and will eventually be made inactive.
+
+  Please visit the NodeSource [1mdistributions(B[m Github and follow the
+  instructions to migrate your repo.
+  [4m[32m[1mhttps://github.com/nodesource/distributions(B[m
+
+  The [1mNodeSource(B[m Node.js Linux distributions GitHub repository contains
+  information about which versions of Node.js and which Linux distributions
+  are supported and how to install it.
+  [4m[32m[1mhttps://github.com/nodesource/distributions(B[m
+
+
+                          [4m[1m[33mSCRIPT DEPRECATION WARNING(B[m
+
+[1m[31m================================================================================(B[m
+[1m[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓(B[m
+[1m[31m================================================================================(B[m
+
+[36m[1mTO AVOID THIS WAIT MIGRATE THE SCRIPT(B[m
+Continuing in 60 seconds (press Ctrl-C to abort) ...
+
+
+## Installing the NodeSource Node.js 20.x repo...
+
+
+## Populating apt-get cache...
+
++ apt-get update
+0% [Working]            Hit:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease
+0% [Connecting to ports.ubuntu.com]                                   Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [119 kB]
+                                   0% [2 InRelease 8460 B/119 kB 7%]0% [2 InRelease 14.3 kB/119 kB 12%]                                   0% [Working]0% [Waiting for headers]                        Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [109 kB]
+0% [3 InRelease 4116 B/109 kB 4%]                                 0% [Working]0% [Waiting for headers]                        Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [110 kB]
+0% [4 InRelease 4116 B/110 kB 4%]                                 0% [Working]100% [Working]              Fetched 338 kB in 1s (336 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+## Installing packages required for setup: lsb-release gnupg...
+
++ apt-get install -y lsb-release gnupg > /dev/null 2>&1
+
+## Confirming "jammy" is supported...
+
++ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_20.x/dists/jammy/Release'
+
+## Adding the NodeSource signing key to your keyring...
+
++ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | tee /usr/share/keyrings/nodesource.gpg >/dev/null
+
+## Creating apt sources list file for the NodeSource Node.js 20.x repo...
+
++ echo 'deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x jammy main' > /etc/apt/sources.list.d/nodesource.list
++ echo 'deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x jammy main' >> /etc/apt/sources.list.d/nodesource.list
+
+## Running `apt-get update` for you...
+
++ apt-get update
+0% [Working]            Get:1 https://deb.nodesource.com/node_20.x jammy InRelease [4563 B]
+0% [Waiting for headers] [1 InRelease 4563 B/4563 B 100%]                                                         0% [Waiting for headers]                        Hit:2 http://ports.ubuntu.com/ubuntu-ports jammy InRelease
+                        0% [Working]0% [Waiting for headers]                        Hit:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease
+0% [Waiting for headers]0% [Connecting to ports.ubuntu.com] [Waiting for headers]                                                         0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:5 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease
+                                              0% [Waiting for headers]                        Get:6 https://deb.nodesource.com/node_20.x jammy/main arm64 Packages [775 B]
+0% [6 Packages 775 B/775 B 100%]                                0% [Working]0% [6 Packages store 0 B]                         0% [Working]100% [Working]              Fetched 5338 B in 0s (12.7 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+## Run `[1msudo apt-get install -y nodejs(B[m` to install Node.js 20.x and npm
+## You may also need development tools to build native addons:
+     sudo apt-get install gcc g++ make
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+     echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt-get update && sudo apt-get install yarn
+
+
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 1%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1
+Use 'apt autoremove' to remove them.
+The following packages will be REMOVED:
+  nodejs-doc
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 1 to remove and 0 not upgraded.
+Need to get 29.4 MB of archives.
+After this operation, 184 MB of additional disk space will be used.
+0% [Working]            Get:1 https://deb.nodesource.com/node_20.x jammy/main arm64 nodejs arm64 20.5.1-deb-1nodesource1 [29.4 MB]
+0% [1 nodejs 40.4 kB/29.4 MB 0%]9% [1 nodejs 3159 kB/29.4 MB 11%]11% [1 nodejs 3880 kB/29.4 MB 13%]12% [1 nodejs 4519 kB/29.4 MB 15%]14% [1 nodejs 5125 kB/29.4 MB 17%]16% [1 nodejs 5813 kB/29.4 MB 20%]18% [1 nodejs 6436 kB/29.4 MB 22%]19% [1 nodejs 7108 kB/29.4 MB 24%]21% [1 nodejs 7747 kB/29.4 MB 26%]23% [1 nodejs 8418 kB/29.4 MB 29%]25% [1 nodejs 9057 kB/29.4 MB 31%]26% [1 nodejs 9713 kB/29.4 MB 33%]28% [1 nodejs 10.3 MB/29.4 MB 35%]                                1645 kB/s 11s30% [1 nodejs 11.0 MB/29.4 MB 37%]                                1645 kB/s 11s32% [1 nodejs 11.6 MB/29.4 MB 39%]                                1645 kB/s 10s33% [1 nodejs 12.3 MB/29.4 MB 42%]                                1645 kB/s 10s35% [1 nodejs 13.0 MB/29.4 MB 44%]                                 1645 kB/s 9s37% [1 nodejs 13.6 MB/29.4 MB 46%]                                 1645 kB/s 9s39% [1 nodejs 14.3 MB/29.4 MB 49%]                                 1645 kB/s 9s41% [1 nodejs 14.9 MB/29.4 MB 51%]                                 1645 kB/s 8s42% [1 nodejs 15.6 MB/29.4 MB 53%]                                 1645 kB/s 8s44% [1 nodejs 16.2 MB/29.4 MB 55%]                                 1645 kB/s 8s46% [1 nodejs 16.8 MB/29.4 MB 57%]                                 1645 kB/s 7s47% [1 nodejs 17.4 MB/29.4 MB 59%]                                 1645 kB/s 7s49% [1 nodejs 18.2 MB/29.4 MB 62%]                                 1297 kB/s 8s51% [1 nodejs 18.7 MB/29.4 MB 64%]                                 1297 kB/s 8s53% [1 nodejs 19.4 MB/29.4 MB 66%]                                 1297 kB/s 7s54% [1 nodejs 20.0 MB/29.4 MB 68%]                                 1297 kB/s 7s56% [1 nodejs 20.4 MB/29.4 MB 69%]                                 1297 kB/s 6s58% [1 nodejs 21.1 MB/29.4 MB 72%]                                 1297 kB/s 6s60% [1 nodejs 22.0 MB/29.4 MB 75%]                                 1297 kB/s 5s62% [1 nodejs 22.7 MB/29.4 MB 77%]                                 1297 kB/s 5s63% [1 nodejs 23.3 MB/29.4 MB 79%]                                 1297 kB/s 4s65% [1 nodejs 24.0 MB/29.4 MB 81%]                                 1297 kB/s 4s67% [1 nodejs 24.6 MB/29.4 MB 84%]                                 1297 kB/s 3s69% [1 nodejs 25.2 MB/29.4 MB 86%]                                 1297 kB/s 3s70% [1 nodejs 25.9 MB/29.4 MB 88%]                                 1284 kB/s 2s72% [1 nodejs 26.5 MB/29.4 MB 90%]                                 1284 kB/s 2s74% [1 nodejs 27.2 MB/29.4 MB 92%]                                 1284 kB/s 1s76% [1 nodejs 27.8 MB/29.4 MB 95%]                                 1284 kB/s 1s77% [1 nodejs 28.5 MB/29.4 MB 97%]                                 1284 kB/s 0s79% [1 nodejs 29.1 MB/29.4 MB 99%]                                 1284 kB/s 0s100% [Working]                                                     1284 kB/s 0s                                                                               Fetched 29.4 MB in 21s (1394 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6366 files and directories currently installed.)
+Removing nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+Selecting previously unselected package nodejs.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6186 files and directories currently installed.)
+Preparing to unpack .../nodejs_20.5.1-deb-1nodesource1_arm64.deb ...
+Unpacking nodejs (20.5.1-deb-1nodesource1) ...
+Setting up nodejs (20.5.1-deb-1nodesource1) ...
+[?2004h]0;root@1dadcaf7c7d3: /root@1dadcaf7c7d3:/# [K[7mnode /usr/src/app/index.js[27mnode /usr/src/app/index.js
+[?2004lHello World
+[?2004h]0;root@1dadcaf7c7d3: /root@1dadcaf7c7d3:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://xxx/Users/xxx/Documents/fullstackopen-containers[0m[27m[24m[Jxxx@xxx fullstackopen-containers % [K[?2004heexit[?2004l
